@@ -24,8 +24,6 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.get('*', (req,res) =>{
     res.sendFile(path.join(__dirname),'public/index.html')
 })
-app.listen(port, ()=>{
-    console.log(`Server statrted on port ${port} `)
-})
+app.listen(port, console.log(`Server statrted on port ${port} `))
 
 
