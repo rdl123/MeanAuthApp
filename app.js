@@ -8,7 +8,7 @@ const connectDB = require("./config/database")
 connectDB();
 const app = express();
 const users = require('./routes/users');
-const port =process.env.Port || 8080;
+const port = process.env.Port || 8080;
 
 app.use(cors());
 app.use(bodyParser.json());
